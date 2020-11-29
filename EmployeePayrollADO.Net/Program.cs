@@ -8,9 +8,13 @@ namespace EmployeePayrollADO.Net
         /// Defines the entry point of the application.
         /// </summary>
         /// <param name="args">The arguments.</param>
-/        static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Hello, Welcome to EmployeePayroll ADO.Net!");
+            EmployeeRepository repository = new EmployeeRepository();
+
+            //UC 8 
+            repository.RetrieveEmployeeDetailsFromMultipleTables();
         }
     }
 }
